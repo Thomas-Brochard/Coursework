@@ -1,0 +1,8 @@
+#! /bin/bash
+#---------------------------------------------
+#example2
+#---------------------------------------------
+NAME="Thomas Brochard"
+echo -n "Hello $NAME. It is now"
+date +"%l:%M %p %Z, %A %B %d, %Y."
+

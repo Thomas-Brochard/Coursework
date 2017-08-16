@@ -1,0 +1,13 @@
+//errors
+//Thomas Brochard
+//lab6
+//Errors found in the LetterHome.class file
+
+1. [letter2.dat] 3 3 does not output the expected template result, but rather "last weekend".
+2. [letter1.dat] 2 3 outputs "hot" rather than the intended "cold" option for wheather.
+3. [letter1.dat] Going out of bounds on option 5 ("Thanks for..") outputs ERROR, yet cuts off the rest of the intended output ("...you sent").
+4. Option 4's automatic output contains "books" as a plural which was unintended
+5. [letter5.dat] Option 5 2 neglects to output an intended period at the end of the sentence.
+6. [letter6.dat] entering a out of bounds sentence code illicits the output "___ is a valid sentence code" rather than "is not". 
+
+   

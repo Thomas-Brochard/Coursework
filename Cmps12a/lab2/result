@@ -1,0 +1,21 @@
+/afs/cats.ucsc.edu/users/g/tbrochar/cs12a/lab2
+
+Access list for public is
+Normal rights:
+  system:operator rlidwk
+  system:authuser rlid
+  system:anyuser rl
+  tbrochar rlidwka
+
+Access list for private is
+Normal rights:
+  tbrochar rlidwka
+
+total 7
+-rw-r--r--. 1 tbrochar users  447 Oct  7 14:57 HelloWorld.class
+drwxr-xr-x. 2 tbrochar users 2048 Oct  7 14:50 private
+-rwx------. 1 tbrochar users  193 Oct  7 14:33 prog
+drwxr-xr-x. 2 tbrochar users 2048 Oct  7 14:50 public
+-rw-r--r--. 1 tbrochar users  239 Oct  7 14:58 result
+
+Hello, my name is Thomas Brochard
