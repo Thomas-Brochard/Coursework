@@ -2,5 +2,5 @@
 - Course completed : Winter quarter, 2016
 - professor : Wesley Mackey
 
-- Please note that git was not used for versioning control during production of these assignments.
-  The assignment in this directory were added afterward.
+- Git was not used for version control during the production of these assignments.
+  The assignments in this directory were added afterward.
