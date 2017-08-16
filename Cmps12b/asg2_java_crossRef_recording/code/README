@@ -1,0 +1,28 @@
+$Id: README,v 1.1 2015-12-11 17:02:48-08 - - $
+
+***Java->A cross reference program using linear linked lists***
+
+-Note: Assignment specifications can be found in the previous directory.
+
+Assignment #2:
+
+	-Task: implement a cross referencing utility
+
+	-I created: 
+		-listmap.java:
+			-insert();
+		-intqueue.java:	
+			-insert(); 
+			
+
+	-I modified:
+		-jxref.java:
+			-main();
+			-xref_file();
+			
+
+	-Demonstrates basic knowledge of Java:
+		-Implementing cross referencing utilities across multiple classes
+		-Implementing and utilizing the Queue data structure
+		-Utilizig built in Java linked List package
+		-Properly adressing errors/handling on the user end 

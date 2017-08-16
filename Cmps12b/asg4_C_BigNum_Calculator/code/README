@@ -1,0 +1,40 @@
+$Id: README,v 1.1 2015-12-11 17:02:48-08 - - $
+
+*** C -> A multiprecision calculator, for big integers ***
+
+	Usage: Options:
+			-Number
+			-opereators: +,-,*
+			-c : clear stack
+			-f : print all
+			-p : prints value on top of stack
+			-q : quit  
+
+-Note: Assignment specifications can be found in the previous directory.
+
+Assignment #4:
+
+	-Task: implement a version of the unix utility dc(1), the arbitrary precision calcutlator.
+
+	-I created: 
+		-bigint.c:
+			-add_bigInt();
+			-doAdd();
+			-sub_bigInt();
+			-doSub();
+			-mul_bigint();
+			-doMul();
+			-show_bigint();
+		-stack.c:
+			-push_stack();
+			-pop_stack();
+			-peek_stack();			
+	-I modified:
+		-main.c:
+			-do_binop();
+			-do_push();
+			
+	-Demonstrates basic knowledge of Java:
+		-Implementing stack database
+		-Implementing algorithms for add/sub/mul of bigints
+		-Properly adressing errors / handling on the user end 

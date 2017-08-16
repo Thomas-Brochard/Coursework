@@ -1,0 +1,27 @@
+$Id: README,v 1.1 2015-12-11 17:02:48-08 - - $
+
+***Java->a binary search tree algorithm, without balancing***
+
+	Usage: airport [-d] 'database'
+
+-Note: Assignment specifications can be found in the previous directory.
+
+Assignment #2:
+
+	-Task: implement an database of airport names, with functionality allowing the user to search for a name based on an abbreviation.
+
+	-I created: 
+		-get();
+		-put();
+		-doPut();
+		-traverse();
+		-print_tree();
+			
+
+	-I modified:
+		-airport.java:
+			-main();
+			
+	-Demonstrates basic knowledge of Java:
+		-Implementing tree database (without balancing algorithm)
+		-Properly adressing errors/handling on the user end 

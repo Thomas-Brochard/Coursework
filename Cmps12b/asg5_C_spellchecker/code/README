@@ -1,0 +1,25 @@
+$Id: README,v 1.1 2015-12-11 17:02:48-08 - - $
+
+*** C -> A spelling checker implemented as a hash table with collision resolution by chaining***
+
+	Usage: spellchk [-nxy] [-d dictionary][-@ debugflags] [filename...]  
+
+-Note: Assignment specifications can be found in the previous directory.
+
+Assignment #5:
+
+	-Task: Implement a spellchecker w/ option for external dictionary
+
+	-I created: 
+		-hashset.c:
+			-free_hashSet();
+			-doubleArray();
+			-put_hashset();
+			-has_hashset();
+			-print_hash();
+			-dump_hash();
+			
+	-Demonstrates basic knowledge of Java:
+		-Implementing hashset database
+		-Handling optional external dictionary input from user 
+		-Properly adressing errors

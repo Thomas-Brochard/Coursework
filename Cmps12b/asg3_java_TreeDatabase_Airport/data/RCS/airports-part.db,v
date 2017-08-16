@@ -1,0 +1,36 @@
+head	1.1;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.1
+date	2013.02.01.00.55.20;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@-
+@
+text
+@# $Id: airports-part.db.sorted,v 1.1 2012-02-07 15:47:04-08 - - $
+# Shorter list of airport codes for debugging.
+SAN:San Diego International/Lindbergh Field
+LAX:Los Angeles International
+BUR:Burbank/Glendale/Pasadena
+LAS:Las Vegas McCarran International
+ONT:Ontario (CA) International
+RNO:Reno Cannon International
+SJC:San Jose (CA) International
+SBA:Santa Barbara Municipal
+SFO:San Francisco International
+SMF:Sacramento Metro
+SNA:Santa Ana/Orange County/John Wayne
+@

@@ -1,0 +1,19 @@
+$Id: README,v 1.1 2015-12-11 17:02:48-08 - - $
+
+***Java-> A file utility reading fiels and formatting paragraphs***
+
+-Note: Assignment specifications can be found in the previous directory.
+
+Assignment #1:
+
+	-Task: Create a version of the unix utility fmt(1)
+
+	-I created: 
+		-jfmt.java:
+			-main(); 
+			-print_paragraph();
+			-format();
+
+	-Demonstrates basic knowledge of Java:
+		-manipulating args and error handling
+		-utilizig built in Java linked List package
