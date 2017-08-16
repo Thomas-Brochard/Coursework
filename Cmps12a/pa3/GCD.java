@@ -1,5 +1,4 @@
 // GCD.java
-// 1479546
 // pa3
 // Calculate the gcd of two inputed 
 

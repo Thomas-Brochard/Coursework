@@ -1,7 +1,6 @@
 //-----------------------------------------------------------------------------
 //   Complex.java
 //   Thomas Brochard
-//   1479546
 //   pa6
 //   Demonstrates complex operations between two user inputed complex numbers
 //-----------------------------------------------------------------------------

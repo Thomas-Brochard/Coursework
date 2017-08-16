@@ -1,5 +1,4 @@
 // Queens.java
-// 1479546
 // pa5
 // Solves the n-Queen problem w/ options of printing all solutions or the number of solutions
 import java.util.Scanner;
