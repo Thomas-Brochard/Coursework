@@ -1,0 +1,16 @@
+// Thomas Brochard
+// pa2
+
+List.c -- an abstract data structure, linked-list with multiple specified
+             functionalities, allowing the user to utilize a cursor.
+
+List.h -- Header file for our List ADT.
+
+ListClient.c -- Client emulating program to ensure correct functionality of
+                the created List ADT in List.java.
+
+Lex.c --    main program, utilizing the List ADT to place the indices of words
+            of an argument specified input file into lexigraphical order and
+            into an argument specified output file.
+
+

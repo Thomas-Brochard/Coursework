@@ -1,0 +1,14 @@
+//Thomas Brochard
+//CruzID: Tbrochar 
+//Programming Assignment 1
+
+List.java -- an abstract data structure, linked-list with multiple specified
+             functionalities, allowing the user to utilize a cursor.
+
+ListClient.java -- Client emulating program to ensure correct functionality of
+                   the created List ADT in List.java.
+
+Lex.java -- main program, utilizing the List ADT to place the indices of words
+            of an argument specified input file into lexigraphical order and
+            into an argument specified output file.
+

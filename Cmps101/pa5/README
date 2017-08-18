@@ -1,0 +1,21 @@
+// Thomas Brochard
+// CruzId: Tbrochar
+// Programming Assignment 5
+
+List.c --  List ADT from PA2. Includes features allowing the client to traverse
+A the List using a cursor.
+
+List.h --  Header file for the above List ADT.
+ 
+Graph.h -- Header file for the below List ADT.
+
+Graph.c -- Graph ADT which utilizes the List ADT to maintain the adjacency form 
+of a Graph. Includes features for impementing  Depth First Searches on a the created 
+graph.
+
+GraphTest.c -- Tests the features of the Graph ADT.
+
+FindComponents.c -- Receives input file and output file from client. Builds an 
+Adjacency List representation of a Graph based on the input values, and returns this 
+Graph as well as its strong connected components to the provided output file. 
+

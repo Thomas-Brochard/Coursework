@@ -1,0 +1,16 @@
+// Thomas Brochard
+// Programming Assignment 4
+
+Graph.c -- Graph ADT utilizing the List adt to form the adjacency form of a                client iput graph.
+Graph.h -- Header file for Graph.c
+
+List.c -- Continuance from programming assignment 2. A Linked List ADT with               features allowing the client to walk down the list using a cursor.
+List.h -- Header file for List.h
+
+GraphTest.c -- Client simulating file, testing the functionality of the Graph                  ADT.
+
+FindPath.c -- File which takes in user input through a txt file, and returns the              Adjacency List representation, as well as any desired paths and                 distances input by the client.
+
+Makefile -- Default Makefile for our Graph, List, and FindPath.
+
+README -- This README file.

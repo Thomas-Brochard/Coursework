@@ -1,0 +1,17 @@
+// Thomas Brochard
+// Programming Assignment 3
+
+Sparse.java -- Client program taking an input file containing data to be placed into two matrices. 
+The matrices are created and output the result of multiple arithmetic operations to the provided output file.
+
+Matrix.java -- Matrix Class containing all the methods required to create a matrice and perform arithmetic 
+operations between matrices, includes copy(), multScalar(), add(), mul(), capabilities etc. as required.
+
+List.java -- Linked List class of nodes containing references to Entry objects
+             for each entry in the matrice. Includes cursor abilities allowing 
+             the client to use walk down the linked list and perform multiple 
+             operations.
+
+MatrixTest.java -- Code for testing matrix and all capabilities.
+
+ListTest.java   -- Code for testing List and all capabilities.
