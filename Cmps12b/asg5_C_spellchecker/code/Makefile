@@ -1,6 +1,5 @@
 # $Id: Makefile,v 1.9 2015-02-20 18:18:19-08 - - $
 #Thomas Brochard
-#tbrochar
 MKFILE    = Makefile
 DEPSFILE  = ${MKFILE}.deps
 NOINCLUDE = ci clean spotless

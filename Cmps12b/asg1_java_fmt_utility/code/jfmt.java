@@ -1,6 +1,4 @@
-// $Id: jfmt.java,v 1.2 2016-03-27 01:00:54-07 - - $
 // Thomas Brochard
-// tbrochar
 //
 // Starter code for the jfmt utility.  This program is similar
 // to the example code jcat.java, which iterates over all of its

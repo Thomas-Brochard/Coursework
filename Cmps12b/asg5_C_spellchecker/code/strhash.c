@@ -1,6 +1,5 @@
 // $Id: strhash.c,v 1.6 2014-03-05 19:24:07-08 - - $
 //Thomas Brochard
-//tbrochar
 #include <assert.h>
 #include <stdio.h>
 #include <sys/types.h>

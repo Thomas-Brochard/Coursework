@@ -1,6 +1,4 @@
-// $Id: strhash.h,v 1.3 2014-03-05 19:24:07-08 - - $
 //Thomas Brochard
-//tbrochar
 //
 // NAME
 //    strhash - return an unsigned 32-bit hash code for a string

@@ -1,6 +1,4 @@
-// $Id: hashset.h,v 1.3 2014-03-05 19:24:07-08 - - $
 //Thomas Brochard
-//tbrochar
 #ifndef __HASHSET_H__
 #define __HASHSET_H__
 
