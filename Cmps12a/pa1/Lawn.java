@@ -3,42 +3,41 @@
 // Pa1
 // calculating time to mow lawn given the dimensions
 
-
 import java.util.Scanner;
 
 public class Lawn{
-   public static void main(String args[]){
+  public static void main(String args[]){
    
-      Scanner myScanner = new Scanner(System.in);
-   
-   
-      System.out.print("Enter the length and width of the lot, in feet: ");
-      double Llength= myScanner.nextDouble();
-      double Lwidth= myScanner.nextDouble();
-      
-      System.out.print("Enter the length and width of the house, in feet: ");
-      double Hlength= myScanner.nextDouble();
-      double Hwidth= myScanner.nextDouble();
-
-
-
-      double totalArea= (Llength*Lwidth)-(Hlength*Hwidth);
-      System.out.println("The lawn area is "+totalArea+" square feet."); 
+    Scanner myScanner = new Scanner(System.in);
     
-      System.out.print("Enter the mowing rate, in square feet per second: ");
-      double rate = myScanner.nextDouble();
-      double time= (totalArea/rate);
+    System.out.printf("Enter the length and width of the lot, in feet: ");
+    double LotLength= myScanner.nextDouble();
+    double LotWidth= myScanner.nextDouble();
       
-      int h,m,s;
+    System.out.printf("Enter the length and width of the house, in feet: ");
+    double HouseLength= myScanner.nextDouble();
+    double HouseWidth= myScanner.nextDouble();
+
+
+
+    double totalArea= (LotLength*LotWidth)-(HouseLength*HouseWidth);
+    System.out.printf("The lawn area is %f square feet.\n", totalArea); 
+    
+    System.out.printf("Enter the mowing rate, in square feet per second: \n");
+    double rate = myScanner.nextDouble();
+    double time= (totalArea/rate);
       
-      s = (int) Math.round(time);
-      m= s/60;
-      s= s%60;
-      h= m/60;
-      m= m%60;
+    int h,m,s;
+      
+    s = (int) Math.round(time);
+    m= s/60;
+    s= s%60;
+    h= m/60;
+    m= m%60;
      
-      System.out.println("The mowing time is "+h+" hour"+(h!=1?"s ":" ")+m+" minute"+(m!=1?"s ":" ")+s+" second"+(s!=1?"s ":" "));       
-   }}
+    System.out.printf("The mowing time is %d hour%s %d minute%s %d second%s", h, (h!=1?"s":""), m, (m!=1? "s":""), s, (s!=1?"s":""));       
+   }
+}
 
 
 

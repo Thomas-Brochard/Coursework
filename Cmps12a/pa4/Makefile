@@ -14,5 +14,3 @@ clean:
 submit: Makefile Roots.java
 	submit cmps012a-pt.f15 pa4 Makefile Roots.java
 
-check:  Makefile Roots.java
-	ls /afs/cats.ucsc.edu/class/cmps012a-pt.f15/pa4/tbrochar

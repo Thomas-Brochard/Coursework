@@ -12,61 +12,50 @@ class Roots{
       System.out.print("Enter the degree: ");
       int degree = sc.nextInt();  
      
-      System.out.print("Enter "+(degree+1)+" coefficients: ");
-      double[] C= new double[degree+1];
+      System.out.printf("Enter %d coefficients: ", degree+1);
+      double[] coeff = new double[degree+1];
       
       for(int i=degree;i>=0;i--)
-         C[i]=sc.nextInt();        
+         coeff[i]=sc.nextInt();        
          
       System.out.print("Enter the left and right endpoints: ");
-      double L = sc.nextInt();
-      double R = sc.nextInt();
+      double leftEndpoint = sc.nextInt();
+      double rightEndpoint = sc.nextInt();
       
-      if(L > R){
-         temp=L;
-         L=R;
-         R=temp;}
+      if(leftEndpoint > rightEndpoint){
+         temp = leftEndpoint;
+         leftEndpoint = rightEndpoint;
+         rightEndpoint = temp;
+      }
    
    
-      double[] D= diff(C); 
+      double[] diff = diff(coeff); 
       
-      
-  /* //show polynomial
-      System.out.print("Polynomial: ");
-      for(int i=0; i<=C.length-1;i++)
-         System.out.print(C[i]+" ");
-   //show derivative
-      System.out.print("Derivative: ");
-      for(int i=0; i<=D.length-1;i++)
-         System.out.print(D[i]+" ");
-      System.out.println();   
-   */
-      double a=L;
-      double b=L+resolution;
+      double b = leftEndpoint + resolution;
       boolean hasRoot=false;
-      while(a<R){
-         if(poly(C,a)*poly(C,b)<0){
-            System.out.printf("Root found at %.5f \n",findRoot(C,a,b,tolerance));
+      while(leftEndpoint < rightEndpoint){
+         if(poly(coeff,leftEndpoint)*poly(coeff,b)<0){
+            System.out.printf("Root found at %.5f \n",findRoot(coeff,leftEndpoint,b,tolerance));
             hasRoot=true;}
-         else if(poly(D,a)*poly(D,a)<0){
-            System.out.printf("Root found at %.5f \n", findRoot(D,a,b,tolerance));
+         else if(poly(diff,leftEndpoint)*poly(diff,leftEndpoint)<0){
+            System.out.printf("Root found at %.5f \n", findRoot(diff,leftEndpoint,b,tolerance));
             hasRoot=true;}
          
-         a=b;
-         b=b+resolution;
+         leftEndpoint = b;
+         b = b+resolution;
            
       }
       
-      if(hasRoot==false)
+      if(hasRoot == false)
          System.out.println("No roots were found in the specified range.");
    }
    
-   static double poly(double[] C, double x)
+   static double poly(double[] coeff, double b)
    {
       double sum=0;
-      int degree= C.length-1;
-      for(int i=0; i<C.length;i++){
-         sum+=C[i]*Math.pow(x,degree);
+      int degree= coeff.length-1;
+      for(int i=0; i<coeff.length;i++){
+         sum+=coeff[i]*Math.pow(b,degree);
          degree--;
       }
    
@@ -75,17 +64,14 @@ class Roots{
    
    
    
-   static double[] diff(double[] C)
-   {
-   
-   
-      int degree = C.length-1;
-      double[] D=new double[C.length];
-      for(int i=0;i<=C.length-1;i++){
-         D[i]=C[i]*degree;
+   static double[] diff(double[] coeff)
+   {   
+      int degree = coeff.length-1;
+      double[] D = new double[coeff.length];
+      for(int i=0;i<=coeff.length-1;i++){
+         D[i]=coeff[i]*degree;
          degree--;
       }
-   
       return D;
    }        
    

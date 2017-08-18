@@ -3,65 +3,50 @@
 // Calculate the gcd of two inputed 
 
 import java.util.Scanner;
+
 class GCD{
    public static void main(String[] args){
-      int A=-1;
-      int B=-1;
+      int first = -1;
+      int second = -1;
      
       Scanner sc = new Scanner(System.in);
-      System.out.print("Enter a positive integer: ");
    
-      while(true){
-        while(!sc.hasNextInt()){
+      do{
            System.out.print("Please enter a positive integer: ");
-           sc.next();}
-           A = sc.nextInt();
-        if(A>0)break;
-           System.out.print("Please enter a positive integer: ");
-      } 
+           first = sc.nextInt();
+      }while(first < 1);
       
-      System.out.print("Enter another a positive integer: ");
-      while(true){
-        while(!sc.hasNextInt()){
-           System.out.print("Please enter a positive integer: ");
-           sc.next();}
-           B = sc.nextInt();
-        if(B>0)break;
-           System.out.print("Please enter a positive integer: ");
-      } 
-                 
-     
-   
-   
-      int tempR;
+      do{
+           System.out.print("Please enter another a positive integer: ");
+           second = sc.nextInt();
+      }  while(second < 1);
+                  
       int temp;
-      int tempA=A;
-      int tempB=B;
-      int Q;
+      int originalFirst = first;
+      int originalSecond = second;
+      int ratio;
       int R;  
-      if(A<B)
-      {temp=A;
-         A=B;
-         B=temp;      
+      if(first < second)
+      {
+	 temp = first;
+         first = second;
+         second = temp;      
       } 
       
-      Q=A/B;
-      R=A-B*Q;
+      ratio = first/second;
+      R = first-second*ratio;
      
       while(R!=0)
       {
-        Q=B/R;
-        A=B;
-        B=R;
-        R=A-B*Q;
+        ratio = second/R;
+        first = second;
+        second = R;
+        R = first-second*ratio;
         
          
          
       }
-      System.out.println("The GCD of "+tempA+" and "+tempB+" is "+B);
+      System.out.printf("The GCD of %d  and %d is %d", originalFirst, originalSecond, second); 
    
-   
-   
-   
-   
-   }}
+   }
+}
